@@ -1,8 +1,22 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { login } from "../../features/userSlice"
 import './Login.css';
 
 const Login = () => {
     const [email, setEmail] = useState("");
+
+    const dispatch = useDispatch();
+
+    const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        dispatch(
+            login({
+            email: email,
+            loggedIn: true
+        }))
+    }
 
     return(
         
@@ -10,7 +24,7 @@ const Login = () => {
             <div className='container-logo'>
                 <img className="logo" src="/images/logo.png" alt="" />
             </div>
-            <form className="login-form">
+            <form className="login-form" onSubmit={ handleSubmit }>
                 <h3>Login Here with your email</h3>
                 <input 
                     type="email" 

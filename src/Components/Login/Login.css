@@ -6,6 +6,7 @@
     height: 100vh;
     /* background-image: url("../../../public/images/login-background.jpg"); */
     background: #040714;
+    opacity: 0.94;
 }
 
 .container-logo {
@@ -40,11 +41,11 @@
     /* padding: 0 0.75rem; */
     backdrop-filter: blur(50px);
     /* padding-left: 15px; */
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     background-color: rgb(49, 52, 62);
     border-radius: 4px;
     caret-color: rgb(2, 231, 245);
-    height: 48px;
+    height: 40px;
     outline: none;
     padding: 7px 12px;
     transition: all 0.1s ease 0s;
