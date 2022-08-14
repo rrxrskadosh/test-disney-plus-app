@@ -1,0 +1,78 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-image: url("../../../public/images/login-background.jpg"); */
+    background: #040714;
+}
+
+.container-logo {
+    margin-top: -60px;
+}
+
+.container-logo > .logo {
+    display: flex;
+    margin: auto;
+    width: 15%;
+}
+
+.login-form {
+    display:flex;
+    flex-direction: column;
+    width: 374px;
+}
+
+.login-form > h3 {
+    font-family: Avenir-World-for-Disney-Demi,sans-serif;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: .11px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.login-form > input {
+    font-size: 15px;
+    border: 1px solid transparent;
+    color: #f9f9f9;
+    /* padding: 0 0.75rem; */
+    backdrop-filter: blur(50px);
+    /* padding-left: 15px; */
+    margin-bottom: 5%;
+    background-color: rgb(49, 52, 62);
+    border-radius: 4px;
+    caret-color: rgb(2, 231, 245);
+    height: 48px;
+    outline: none;
+    padding: 7px 12px;
+    transition: all 0.1s ease 0s;
+}
+
+.login-form > input::placeholder {
+    font-family: Avenir-World-for-Disney-Demi,sans-serif;
+}
+
+.login-form > button {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+    outline: none;
+    background: #0072d2;
+    border: 0;
+    border-radius: 0.25rem;
+    color: #f9f9f9;
+    padding: 0px 24px;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 48px;
+    margin: 0px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out 0s;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
