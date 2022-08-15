@@ -1,12 +1,24 @@
 import React from 'react';
+import Navbar from '../NavBar/NavBar';
+import ImgSlider from '../ImgSlider/ImgSlider';
+
+
+import "../Home/Home.css"
+import { BrowserRouter as Router } from "react-router-dom"
 
 const Home = () => {
+
+
     return(
-        <div className="home">
-            <div className='container'>
-                <h2>Home in construction!</h2>
+        <Router>
+            <div className="home">
+                <Navbar />
+                <div className='container'>
+                    <ImgSlider />
+                    <h2>Home in construction!</h2>
+                </div>
             </div>
-        </div>
+        </Router>
     )
 }
 
