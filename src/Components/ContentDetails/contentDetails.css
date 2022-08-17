@@ -1,0 +1,64 @@
+.container-details {
+    min-height: calc(100vh - 70px);
+    padding: 0 calc(3.5vw + 5px);
+    position: relative;
+}
+
+.container-details > .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-movie {
+    height: 30vh;
+    min-height: 170px;
+    width: 35vw;
+    min-width: 200px;
+}
+
+.logo-movie > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.controls {
+    display: flex;
+}
+
+.play-button, .trailer-button {
+    border-radius: 4px;
+    font-size:15px;
+    padding: 0px 15px;
+    margin-right: 22px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background: rgb(249, 249, 249);
+    border: none;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background: rgb(198, 198, 198);
+}
+
+.trailer-button {
+    background: rgba(0,0,0, 0.3);
+}
+
+
+
+
